@@ -16,7 +16,7 @@
         </p>
         <p>
             <label for="iemail">E-mail:</label><br>
-            <input type="email" name="email" id="iemail" autocomplete="email" placeholder="seuemail@exemplo.com">
+            <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="seuemail@exemplo.com">
         </p>
         <p>
             <label for="itel">Telefone(formato (xx)xxxxx-xxxx):</label><br>
@@ -27,7 +27,7 @@
             <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="15" placeholder="Mínimo 8 letras" autocomplete="current-password">
         <p>
             <label for="iage">Idade:</label><br>
-            <input type="age" name="age" id="iage" autocomplete="age" step="1"  required placeholder="Sua idade">
+            <input type="number" name="age" id="iage" autocomplete="age" step="1"  required placeholder="Sua idade">
         </p>
         <p><label for="iest">Estado de entrega</label><br>
             <select name="estado" id="iest">
@@ -36,11 +36,18 @@
                     <option value="MG">Minas Geais</option>
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito Santo</option>
                 </optgroup>
                 <optgroup label="Região Nordeste">
                     <option value="MA">Maranhão</option>
                     <option value="PE">Pernambuco</option>
                     <option value="RN">Rio Grande do Norte</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="SE">Sergipe</option>
                 </optgroup>
                 <optgroup label="Região Centro-Oeste">
                     <option value="DF">Distrito Federal</option>
@@ -50,7 +57,11 @@
                 </optgroup>
                 <optgroup label="Norte">
                     <option value="AM">Amazonas</option>
+                    <option value="AC">Acre</option>
                     <option value="PA">Pará</option>
+                    <option value="AP">Amapá</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
                     <option value="TO">Tocantins</option>
                 </optgroup>
                 <optgroup label="Sul">
@@ -109,16 +120,16 @@
     <fieldset>
        <legend>Avaliação de Modelos BYD</legend>
         <p>
-            <label>Avalie o BYD Dolphin Plus</label><br>
-            <input type="number" name = "num" min="0" max="5" step="1" placeholder="0 a 5 estrelas">
+            <label for="num1">Avalie o BYD Dolphin Plus</label><br>
+            <input type="number" id ="num1" name="num1" min="0" max="5" step="1" placeholder="0 a 5 estrelas">
         </p>
         <p>
-            <label>Avalie o BYD GS</label><br>
-            <input type="number" name = "num" min="0" max="5" step="1" placeholder="0 a 5 estrelas">
+            <label for="num2">Avalie o BYD GS</label><br>
+            <input type="number" id ="num2" name = "num2" min="0" max="5" step="1" placeholder="0 a 5 estrelas">
         </p>
         <p>
-            <label>Avalie o BYD Mini</label><br>
-            <input type="number" name = "num" min="0" max="5" step="1" placeholder="0 a 5 estrelas">
+            <label for="num3">Avalie o BYD Mini</label><br>
+            <input type="number" id ="num3"name = "num3" min="0" max="5" step="1" placeholder="0 a 5 estrelas">
         </p>
      </fieldset>
 
